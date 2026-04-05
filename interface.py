@@ -24,7 +24,7 @@ def load_model():
 @st.cache_resource
 def init_connection():
     client = MongoClient(
-        "mongodb+srv://databasesensor:1234mongo@navdeep.p32wk6a.mongodb.net/?appName=navdeep"
+        client = MongoClient(st.secrets["MONGO_URI"])
     )
     return client["printer_maintenance"]["sensor_data_ml"]
 
