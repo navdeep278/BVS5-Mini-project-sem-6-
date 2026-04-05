@@ -25,7 +25,7 @@ def load_model():
 def init_connection():
     client = MongoClient(st.secrets["MONGO_URI"])
     return client["printer_maintenance"]["sensor_data_ml"]
-    )
+    
 
 # ============================================================
 # SECTION 3: DATA FETCHING & PREDICTION
