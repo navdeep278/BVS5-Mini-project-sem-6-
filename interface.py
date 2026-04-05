@@ -23,11 +23,9 @@ def load_model():
 
 @st.cache_resource
 def init_connection():
-    client = MongoClient(
-        client = MongoClient(st.secrets["MONGO_URI"])
-    )
+    client = MongoClient(st.secrets["MONGO_URI"])
     return client["printer_maintenance"]["sensor_data_ml"]
-
+    )
 
 # ============================================================
 # SECTION 3: DATA FETCHING & PREDICTION
