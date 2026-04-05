@@ -213,3 +213,4 @@ if fail:
 print(f"{Fore.CYAN}  Collection     : printer_maintenance → sensor_data_ml")
 print(f"{Fore.WHITE}  Model training data ready")
 print(f"{Fore.GREEN}{Style.BRIGHT}{'═'*60}")
+
