@@ -85,7 +85,7 @@ REQUIRED_COLS = [
 try:
     df = pd.read_csv('ai4i2020.csv')
 except FileNotFoundError:
-    print(f"{Fore.RED}❌ 'ai4i2020.csv' not found. Same folder mein rakh.")
+    print(f"{Fore.RED}❌ 'ai4i2020.csv' not found.")
     exit(1)
 
 missing = [c for c in REQUIRED_COLS if c not in df.columns]
